@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<!--<script type="text/babel">-->
+    <!--ReactDOM.render(-->
+            <!--<h1>Hello, world!</h1>,-->
+            <!--document.getElementById('example')-->
+    <!--);-->
+<!--</script>-->
+<!--<nav id="nav"></nav>
+<script type="text/babel">
+    ReactDOM.render(
+            <h2>shabi</h2>,
+            document.getElementById('nav')
+    );
+</script>-->
+<script type="text/babel">
+    /*var names = ['Alice' , 'Emily' , 'Kate'];
+    ReactDOM.render(
+       <div>
+       {
+           names.map(function (name){
+               return <div>hello,{name}!</div>
+           })
+
+       }
+       </div>,
+            document.getElementById('example')
+    );*/
+    var HelloMessage = React.createClass({
+        render:function(){
+            return <h1>hello {this.props.name}</h1>;
+        }
+    });
+    ReactDOM.render(
+            <HelloMessage name="Joho"/>,
+            document.getElementById('example')
+    )
+</script>
+
+
+</body>
+</html>
